@@ -1,0 +1,125 @@
+* {
+-webkit-appearance: none;
+}
+
+.blur {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    height: 100vh;
+    width: 50%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+}
+
+@keyframes animation1 {
+	0% {
+    transform: translate3d(0, -3px, 0);
+	}
+
+	50% {
+		transform: translate3d(0, 10px, 0);
+	}
+	100% {
+		transform: translate3d(0, -3px, 0);
+	}
+}
+
+@keyframes animation2 {
+	0% {
+    transform: translate3d(-3px, 0px, 0);
+ }
+
+	50% {
+		transform: translate3d(10px, 0px, 0);
+	}
+	100% {
+		transform: translate3d(-3px, 0px, 0);
+	}
+}
+
+.online_monitoring-ico {
+    border-radius: 50%;
+    background-color: #68FF50;
+    box-shadow: 0 0 0 0 rgb(104 255 80 / 39%), 0 0 0 0 #4caf50;
+    width: 12px;
+    height: 12px;
+    margin-top: 2px;
+    min-width: 6px;
+    margin-right: 16px;
+    min-height: 6px;
+    animation-name: pulser;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    transform-origin: center center;
+}
+
+@keyframes pulser {
+    from {
+        box-shadow: 0 0 0 0 rgb(76 175 80/47%), 0 0 0 0 rgb(139 195 74/60%)
+    }
+
+    to {
+        box-shadow: 0 0 0 9px rgb(254 203 46 / 0%), 0 0 0 14px rgb(254 203 46 / 0%);
+    }
+}
+
+.error-block {
+    position: relative;
+    margin-left: 45px;
+    color: white;
+    width: 53%;
+    font-family: 'TT Norms';
+    text-transform: uppercase;
+    background: #202225;
+    font-size: 16px;
+    text-align: center;
+    padding: 25px;
+    font-weight: 400;
+}
+
+.error-panel {
+    background: #824a4d;
+    padding: 16px;
+    text-transform: initial;
+}
+
+
+.donut {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 72px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 0.3rem solid rgba(151, 159, 208, 0.3);
+    border-top-color: #979fd0;
+    animation: 1.5s spin infinite linear;
+}
+
+.donut_2 {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 72px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 0.3rem solid rgba(151, 159, 208, 0.3);
+    border-top-color: #979fd0;
+    animation: 1.5s spin infinite linear;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+    }
+    
